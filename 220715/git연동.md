@@ -37,15 +37,15 @@ git clone “repo url” : 새로운 폴더 만들고 git bash이용하여 이 �
 
 
 ### 💡git 6단계
-git init
-git add .
-git commit -m ""
-github에서 repo만들기
-git remote add origin "github_repo_url"
-git push origin master
+git init  
+git add .  
+git commit -m ""  
+github에서 repo만들기  
+git remote add origin "github_repo_url"  
+git push origin master  
 
-<<<<<<< HEAD
-만약 잘 안되면 폴더 안에있는 .git 폴더 삭제 한후에 다시해보기(제일 간단한 방법) 
+
+### 만약 잘 안되면 폴더 안에있는 .git 폴더 삭제 한후에 다시해보기(제일 간단한 방법) 
 =======
 만약 잘 안되면 폴더 안에있는 .git 폴더 삭제 한후에 다시해보기(제일 간단한 방법)
 >>>>>>> 296989e654afedfe8a8bcbf0fd32213ee9f25f9c
