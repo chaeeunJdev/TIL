@@ -47,4 +47,4 @@ git push origin master
 
 #### 만약 잘 안되면 폴더 안에있는 .git 폴더 삭제 한후에 다시해보기(제일 간단한 방법) 
 
->>>>>>> 296989e654afedfe8a8bcbf0fd32213ee9f25f9c
+
