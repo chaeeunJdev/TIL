@@ -52,8 +52,9 @@ git push origin master
 내용수정 후 저장  
 git pull origin master : 내용 먼저 불러오기  
 git status : 상태확인(빨간 글)  
-git commit -m "" :커밋  
+git add . : 수정사항 저장    
 git status : 상태확인(녹색 글)  
+git commit -m "" :커밋  
 git log : commit기록 확인, q눌러서 탈출  
 git push origin master : 수정사항 업로드 
 
