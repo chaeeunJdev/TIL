@@ -48,13 +48,20 @@ git push origin master
 #### 만약 잘 안되면 폴더 안에있는 .git 폴더 삭제 한후에 다시해보기(제일 간단한 방법) 
 
 
-### 내용 수정 후 push
-내용수정 후 저장  
+### 내용 수정 후 push 
 git pull origin master : 내용 먼저 불러오기  
+내용수정 후 저장  
 git status : 상태확인(빨간 글)  
 git add . : 수정사항 저장    
 git status : 상태확인(녹색 글)  
 git commit -m "" :커밋  
 git log : commit기록 확인, q눌러서 탈출  
 git push origin master : 수정사항 업로드 
+
+
+### github username 변경 후 repo 재연결  
+bash 창에서  
+git remote -v : 현재 주소 확인  
+git remote set-url origin 바뀐주소 
+git remote -v : 바뀐 주소로 잘 변경되었는지 확인
 
