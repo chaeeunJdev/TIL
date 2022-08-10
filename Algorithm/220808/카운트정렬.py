@@ -1,7 +1,7 @@
 N = int(input())
 arr = list(map(int, input().split())) 
 
-tmp = [0]* N
+tmp = [0] * N
 c = [0] * 100 # 0부터 100까지의 숫자 개수, 인덱스가 100까지 있어야 함
 for i in range(N) : # 카운트
     c[arr[i]] += 1
