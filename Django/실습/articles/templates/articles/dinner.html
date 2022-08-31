@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <h1>{{pick}}
+      은
+      {{pick|length}}
+      글자
+    </h1>
+    <h1>{{foods|join:", "}}</h1>
+    <p>{{long_str|lower|truncatewords:10}}</p>
+
+    <h1>{{number}}</h1>
+
+    {% if number == 10 %}
+      <h1>숫자는 10이다.</h1>
+    {% elif number < 10 %}
+      <h1>숫자는 10보다 작다</h1>
+    {% else %}
+      <h1>그 외의 숫자</h1>
+    {% endif %}
+
+    <a href="{% url 'articles:index' %}">뒤로</a>
+
+  </body>
+
+</html>
