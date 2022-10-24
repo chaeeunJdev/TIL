@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .blue {
+            width : 50px;
+            height : 50px;
+            background-color: blue;
+            margin-left: 20px;
+        }
+
+        .orange {
+            width : 25px;
+            height : 25px;
+            background-color: orange;
+            margin-left: 20px;
+        }
+
+        .red {
+            width : 50px;
+            height : 50px;
+            background-color: red;
+            margin-left: 20px;
+        }
+
+        .green {
+            width : 25px;
+            height : 25px;
+            background-color: green;
+            margin-left: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="blue">
+        <div class="orange"></div>
+    </div>
+    <hr>
+    <div class="red">
+        <div class="green"></div>
+    </div>
+    <button id="btn">버튼</button>
+    <script>
+        const btn1 = document.querySelector('#btn')
+        btn1.addEventListener('mouseenter', function (event) {
+            alert('버튼 위에 올라왔습니다.')
+        })
+
+        const blue = document.querySelector('.blue');
+        // mouseenter 이벤트 : 자기 자신만
+        blue.addEventListener('mouseenter', function (event) {
+            // 요소 안에 마우스 들어왔을때
+            console.log('마우스 엔터')
+        })
+        blue.addEventListener('mouseleave', function (event) {
+            // 요소 밖으로 마우스 나갈때
+            console.log('마우스 리브')
+        })
+        const red = document.querySelector(".red")
+        //muserover 이벤트 : 자식도 포함된다
+        red.addEventListener('mouseover', function (evnet) {
+            console.log('마우스 오버')   
+            // 실제로 이벤트가 발생한 요소를 알고싶을때
+            console.log(event.target)         
+        })
+        red.addEventListener('mouseout', function (evnet) {
+            //
+            console.log('마우스 아웃')            
+        })
+    </script>
+</body>
+</html>
